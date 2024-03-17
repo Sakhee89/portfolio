@@ -1,32 +1,42 @@
+import { useState } from "react";
+import { MobileNavBar } from "./MobileNavBar";
+
 export function Navbar() {
-  const aStyling =
-    "text-[0.9rem] font-medium relative cursor-pointer before:w-8 before:h-[0.2rem] before:bg-gradient-to-r before:from-[#a993f3] before:to-[#7e61e7] before:rounded-lg before:absolute before:bottom-[-0.6rem] before:opacity-0 before:translate-x-[-1.5rem] before:transition-all before:ease-linear before:duration-300 before:hover:w-full before:hover:translate-x-0 before:hover:opacity-100";
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function toggleMenu() {
+    setOpenMenu(!openMenu);
+  }
 
   return (
     <>
+      <MobileNavBar isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="bg-black text-white py-2 sticky top-0 z-30 backdrop-blur-[50px] px-8 md:px-0">
         <div className="max-w-[1700px] flex items-center justify-between py-4 mb-auto">
           <h1 className="px-4">Portfolio</h1>
           <ul className="hidden items-center gap-2 list-none md:flex">
             <li className="mx-6">
-              <a className={`${aStyling}`}>Home</a>
+              <a className="a-style">Home</a>
             </li>
             <li className="mx-6">
-              <a className={`${aStyling}`}>About</a>
+              <a className="a-style">About</a>
             </li>
             <li className="mx-6">
-              <a className={`${aStyling}`}>Projects</a>
+              <a className="a-style">Projects</a>
             </li>
             <li className="mx-6">
-              <a className={`${aStyling}`}>Contact Me</a>
+              <a className="a-style">Contact Me</a>
             </li>
           </ul>
-          <button className="menu-button" onClick={() => {}}>
+          <button
+            className="w-10 h-10 text-[1.5rem] flex items-center justify-center rounded-[0.4rem] text-white border-transparent custom-background leading-[0] cursor-pointer transition-all duration-[400] ease-in-out md:hidden hover:text-[#f2f1f4] hover:bg-black hover:border hover:border-solid hover:border-[#4f4e51]"
+            onClick={toggleMenu}
+          >
             <span
               className={"material-symbols-outlined"}
               style={{ fontSize: "1.8rem" }}
             >
-              Menu
+              {openMenu ? "close" : "menu"}
             </span>
           </button>
         </div>
