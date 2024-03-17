@@ -7,6 +7,7 @@
 }
 
 .mobile-menu {
+  color: white;
   width: 100vw;
   height: 100vh;
   display: none;
@@ -30,10 +31,6 @@
   .mobile-menu {
     display: block;
   }
-}
-
-.custom-box-shadow {
-  box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
 }
 
 @layer components {
