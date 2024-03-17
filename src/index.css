@@ -6,33 +6,6 @@
   background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
 }
 
-.mobile-menu {
-  color: white;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999 !important;
-  opacity: 0;
-  box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  transform: translateX(-100vw);
-}
-
-.mobile-menu.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-@media (max-width: 769px) {
-  .mobile-menu {
-    display: block;
-  }
-}
-
 @layer components {
   .a-style {
     @apply text-[0.9rem] font-medium relative cursor-pointer before:w-8 before:h-[0.2rem] before:bg-gradient-to-r before:from-[#a993f3] before:to-[#7e61e7] before:rounded-lg before:absolute before:bottom-[-0.6rem] before:opacity-0 before:translate-x-[-1.5rem] before:transition-all before:ease-linear before:duration-300 before:hover:w-full before:hover:translate-x-0 before:hover:opacity-100;

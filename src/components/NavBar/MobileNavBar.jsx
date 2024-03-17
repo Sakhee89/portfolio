@@ -9,10 +9,14 @@ export function MobileNavBar({ isOpen, toggleMenu }) {
   return (
     <>
       <div
-        className={`mobile-menu ${isOpen ? "active" : ""}`}
+        className={`w-screen h-screen block bg-black text-white bg-opacity-30 fixed left-0 top-0 z-[999] custom-box-shadow transition-all duration-300 ease-in-out md:hidden ${
+          isOpen
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 translate-x-[-100vw]"
+        }`}
         onClick={toggleMenu}
       >
-        <div className="w-[45vw] h-screen bg-[#342864] p-8 active:opacity-[1] active:translate-x-0">
+        <div className="w-[45vw] h-screen bg-[#342864] p-8">
           <h1 className="mb-12">Portfolio</h1>
           <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
             <li className="mx-6">
