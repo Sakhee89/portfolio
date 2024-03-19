@@ -1,3 +1,9 @@
 export function Home() {
-  return <>Welcome to my Portfolio</>;
+  return (
+    <div>
+      <h1 className="flex justify-center text-[1.3rem] font-semibold">
+        Welcome to my Portfolio
+      </h1>
+    </div>
+  );
 }
