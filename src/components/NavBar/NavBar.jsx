@@ -28,7 +28,7 @@ export function Navbar() {
           </li>
         </ul>
         <button
-          className="w-10 h-10 text-[1.5rem] flex items-center justify-center rounded-[0.4rem] text-white border-transparent custom-background leading-[0] cursor-pointer transition-all duration-[400] ease-in-out md:hidden hover:text-[#f2f1f4] hover:bg-gradient-to-r hover:border hover:border-solid hover:border-[#4f4e51]"
+          className="w-10 h-10 text-[1.5rem] flex items-center justify-center rounded-[0.4rem] text-white border-transparent custom-background leading-[0] cursor-pointer transition-all duration-[400] ease-in-out md:hidden hover:text-[#f2f1f4] hover:bg-gradient-to-r hover:from-transparent hover:border hover:border-solid hover:border-[#4f4e51]"
           onClick={toggleMenu}
         >
           <span

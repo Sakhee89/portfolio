@@ -11,7 +11,9 @@ export function ContactInfoCard({ urlText }) {
       <div className="w-16 h-16 flex items-center justify-center rounded-lg bg-[#3d3072] mb-[0.8rem]">
         <SocialIcon url={urlText} />
       </div>
-      <p className="font-[400] text-[0.9rem]">{urlText}</p>
+      <a href={urlText} className="font-[400] text-[0.9rem]">
+        {urlText}
+      </a>
     </div>
   );
 }
