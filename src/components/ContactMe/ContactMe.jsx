@@ -1,5 +1,5 @@
 import { EmailForm } from "./EmailForm";
-import { ContactInfoCard } from "./ContractInfoCard";
+import { ContactInfoCard } from "./ContactInfoCard";
 
 export function ContactMe() {
   return (
