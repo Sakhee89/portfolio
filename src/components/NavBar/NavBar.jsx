@@ -1,29 +1,64 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { MobileNavBar } from "./MobileNavBar";
+import { logo } from "../../assets";
 
 export function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [active, setActive] = useState("");
 
   function toggleMenu() {
     setOpenMenu(!openMenu);
   }
 
   return (
-    <nav className="bg-black text-white py-2 sticky top-0 z-30 backdrop-blur-[50px] px-8 md:px-0">
-      <MobileNavBar isOpen={openMenu} toggleMenu={toggleMenu} />{" "}
+    <nav className="bg-gradient-to-r from-[#100534] to-[#050112] text-white py-2 sticky top-0 z-30 backdrop-blur-[50px] px-8 md:px-14">
+      <MobileNavBar isOpen={openMenu} toggleMenu={toggleMenu} />
       <div className="max-w-[1700px] flex items-center justify-between py-4 mb-auto">
-        <h1 className="px-4">Portfolio</h1>
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 0);
+          }}
+        >
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            Kevin &nbsp;<span className="sm:block hidden"> | Developer</span>
+          </p>
+        </Link>
         <ul className="hidden items-center gap-2 list-none md:flex">
-          <li className="mx-6">
+          <li
+            className="mx-6"
+            onClick={() => {
+              setActive("Home");
+            }}
+          >
             <a className="navBar-a-styling">Home</a>
           </li>
-          <li className="mx-6">
+          <li
+            className="mx-6"
+            onClick={() => {
+              setActive("About");
+            }}
+          >
             <a className="navBar-a-styling">About</a>
           </li>
-          <li className="mx-6">
+          <li
+            className="mx-6"
+            onClick={() => {
+              setActive("Projects");
+            }}
+          >
             <a className="navBar-a-styling">Projects</a>
           </li>
-          <li className="mx-6">
+          <li
+            className="mx-6"
+            onClick={() => {
+              setActive("Contact Me");
+            }}
+          >
             <a className="navBar-a-styling">Contact Me</a>
           </li>
         </ul>
