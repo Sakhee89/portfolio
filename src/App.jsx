@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { AboutMe } from "./components/AboutMe";
+import AboutMe from "./components/About/AboutMe";
 import { ContactMe } from "./components/ContactMe/ContactMe";
 import { Navbar } from "./components/NavBar/NavBar";
 import { Hero } from "./components/Hero";

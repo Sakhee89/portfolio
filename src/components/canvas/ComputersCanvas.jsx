@@ -5,7 +5,7 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import { CanvasLoader } from "../Loader";
 
 import React from "react";
-import Computers from "./Computers";
+import { Computers } from "./Computers";
 
 export function ComputersCanvas() {
   const [isMobile, setIsMobile] = useState(false);

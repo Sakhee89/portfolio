@@ -5,6 +5,7 @@ import { logo } from "../../assets";
 
 export function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [active, setActive] = useState("");
 
   function toggleMenu() {
@@ -33,7 +34,8 @@ export function Navbar() {
           <li
             className="mx-6"
             onClick={() => {
-              setActive("Home");
+              setActive("");
+              window.scrollTo(0, 0);
             }}
           >
             <a className="navBar-a-styling">Home</a>

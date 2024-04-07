@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { useGLTF } from "@react-three/drei";
 
-export default function Computers({ isMobile }) {
+export function Computers({ isMobile }) {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
