@@ -1,17 +1,21 @@
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { AboutMe } from "./components/AboutMe";
 import { ContactMe } from "./components/ContactMe/ContactMe";
-import { Home } from "./components/Home";
 import { Navbar } from "./components/NavBar/NavBar";
+import { Hero } from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div className="px-6 xl:max-w-[1300px] xl:mx-auto xl:last:relative">
-        <Home />
+    <BrowserRouter>
+      <div className="relative z-0 bg-gradient-to-r from-[#100534] to-[#050112]">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+        </div>
+        <Hero />
+        <AboutMe />
         <ContactMe />
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 

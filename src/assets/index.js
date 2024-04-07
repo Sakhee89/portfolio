@@ -17,7 +17,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import shopify from "./shopify.png";
 
 export {
   logo,
@@ -39,5 +38,4 @@ export {
   tailwind,
   typescript,
   threejs,
-  shopify,
 };
