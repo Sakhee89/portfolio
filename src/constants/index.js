@@ -11,6 +11,9 @@ import {
   mongodb,
   git,
   threejs,
+  knowledgenest,
+  newsfe,
+  newsbe,
 } from "../assets";
 
 const services = [
@@ -69,33 +72,66 @@ const technologies = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "News Server (FrontEnd)",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to to explore a range of articles contributed by various users. Users can add and remove comments and vote on articles. The platform offers filtering based on topics, sort articles by comments, counts, votes and date created",
     tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: newsfe,
+    source_code_link: "https://sakhee-news.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "News Server (BackEnd)",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Backend application that serves as a data provider for our frontend application. It accepts requests from the frontend, using HTTP requests such as GET, POST, PUT, and DELETE, and responds in a JSON format.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "",
+      },
+      {
+        name: "express.js",
+        color: "",
+      },
+      {
+        name: "jest",
+        color: "",
+      },
+      {
+        name: "REST API",
+        color: "",
+      },
+      {
+        name: "postgreSQL",
+        color: "",
+      },
+    ],
+    image: newsbe,
+    source_code_link: "https://sakhee-news.onrender.com/api",
+  },
+  {
+    name: "Knowledge Nest",
+    description:
+      "Web application that enables users to seek services from the various users who are advertising them. It has a built in chat system where the users can communicate with each other, and the ability to sign in by email or google login.",
+    tags: [
+      {
+        name: "vue.js",
         color: "blue-text-gradient",
       },
       {
@@ -103,12 +139,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "axios",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: knowledgenest,
+    source_code_link: "https://knowledge-nest-fe.vercel.app/",
   },
 ];
 

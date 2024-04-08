@@ -3,6 +3,7 @@ import AboutMe from "./components/About/AboutMe";
 import { ContactMe } from "./components/ContactMe/ContactMe";
 import { Navbar } from "./components/NavBar/NavBar";
 import { Hero } from "./components/Hero";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
         <Hero />
         <AboutMe />
+        <Projects />
         <ContactMe />
       </div>
     </BrowserRouter>

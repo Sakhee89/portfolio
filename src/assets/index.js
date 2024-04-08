@@ -17,6 +17,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import knowledgenest from "./knowledgenest.png";
+import newsfe from "./newsfe.png";
+import newsbe from "./newsbe.png";
 
 export {
   logo,
@@ -38,4 +41,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  knowledgenest,
+  newsfe,
+  newsbe,
 };
