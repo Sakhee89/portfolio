@@ -38,5 +38,5 @@ function Projects() {
   );
 }
 
-const WrappedProjects = SectionWrapper(Projects, "");
+const WrappedProjects = SectionWrapper(Projects, "projects");
 export default WrappedProjects;
