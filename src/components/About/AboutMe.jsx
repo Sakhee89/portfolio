@@ -21,8 +21,12 @@ function AboutMe() {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I&apos;m a Junior software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React.js, Vue.js, Node.js,
-        and Three.js.
+        JavaScript, and expertise in frameworks like React.js, Vue.js, and
+        Node.js. I&apos;m a quick learner and am currently learning about
+        Three.js, and have implemented it into this portfolio. I am passionate
+        about continuous personal development and am committed to exploring new
+        projects and technologies to broaden my skill set and contribute
+        meaningfully to the tech community.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
