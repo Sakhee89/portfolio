@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { mobilelogo } from "../../assets";
+import { Link } from "react-router-dom";
 
 export function MobileNavBar({ isOpen, toggleMenu }) {
   MobileNavBar.propTypes = {
@@ -15,23 +16,49 @@ export function MobileNavBar({ isOpen, toggleMenu }) {
       onClick={toggleMenu}
     >
       <div className="w-[45vw] h-screen bg-[#342864] p-8">
-        <img
-          src={mobilelogo}
-          alt="logo"
-          className="w-9 h-9 object-contain mb-12"
-        />
+        <div>
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img
+              src={mobilelogo}
+              alt="logo"
+              className="w-9 h-9 object-contain mb-12"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            />
+          </Link>
+        </div>
         <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
           <li className="mx-6">
-            <a className="navBar-a-styling">Home</a>
+            <a
+              className="navBar-a-styling"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Home
+            </a>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling">About</a>
+            <a className="navBar-a-styling" href="#about">
+              About
+            </a>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling">Projects</a>
+            <a className="navBar-a-styling" href="#projects">
+              Projects
+            </a>
           </li>
           <li className="mx-6">
-            <a className="navBar-a-styling">Contact Me</a>
+            <a className="navBar-a-styling" href="#contact">
+              Contact Me
+            </a>
           </li>
         </ul>
       </div>
