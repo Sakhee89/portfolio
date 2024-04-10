@@ -10,10 +10,11 @@ import {
   nodejs,
   mongodb,
   git,
-  threejs,
   knowledgenest,
   newsfe,
   newsbe,
+  postgreSQL,
+  vue,
 } from "../assets";
 
 const services = [
@@ -57,16 +58,20 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "vue",
+    icon: vue,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
+  },
+  {
+    name: "postgreSQL",
+    icon: postgreSQL,
   },
 ];
 

@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 function Projects() {
   return (
-    <>
+    <section>
       <motion.div variants={textVariant()}>
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
           My work
@@ -34,7 +34,7 @@ function Projects() {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

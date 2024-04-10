@@ -20,6 +20,9 @@ import threejs from "./tech/threejs.svg";
 import knowledgenest from "./knowledgenest.png";
 import newsfe from "./newsfe.png";
 import newsbe from "./newsbe.png";
+import postgreSQL from "./postgreSQL.png";
+import node from "./node.png";
+import vue from "./vue.png";
 
 export {
   logo,
@@ -44,4 +47,7 @@ export {
   knowledgenest,
   newsfe,
   newsbe,
+  postgreSQL,
+  node,
+  vue,
 };

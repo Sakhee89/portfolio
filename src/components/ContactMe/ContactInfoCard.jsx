@@ -1,6 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import PropTypes from "prop-types";
 
+// eslint-disable-next-line react/prop-types
 export function ContactInfoCard({ urlText, iconText }) {
   ContactInfoCard.propTypes = {
     urlText: PropTypes.string.isRequired,
