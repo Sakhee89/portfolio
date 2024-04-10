@@ -83,15 +83,15 @@ const projects = [
     tags: [
       {
         name: "JavaScript",
-        color: "blue-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "bootstrap",
-        color: "green-text-gradient",
+        color: "text-[#2f80ed]",
       },
     ],
     image: newsfe,
@@ -104,27 +104,27 @@ const projects = [
     tags: [
       {
         name: "JavaScript",
-        color: "blue-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "node.js",
-        color: "",
+        color: "text-[#2f80ed]",
       },
       {
         name: "express.js",
-        color: "",
+        color: "text-[#2f80ed]",
       },
       {
         name: "jest",
-        color: "",
+        color: "text-[#2f80ed]",
       },
       {
         name: "REST API",
-        color: "",
+        color: "text-[#2f80ed]",
       },
       {
         name: "postgreSQL",
-        color: "",
+        color: "text-[#2f80ed]",
       },
     ],
     image: newsbe,
@@ -137,23 +137,27 @@ const projects = [
     tags: [
       {
         name: "vue.js",
-        color: "blue-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "axios",
-        color: "pink-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "TypeScript",
-        color: "pink-text-gradient",
+        color: "text-[#2f80ed]",
       },
       {
         name: "firebase",
-        color: "pink-text-gradient",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "tailwind",
+        color: "text-[#2f80ed]",
       },
     ],
     image: knowledgenest,
