@@ -23,6 +23,7 @@ import newsbe from "./newsbe.png";
 import postgreSQL from "./postgreSQL.png";
 import node from "./node.png";
 import vue from "./vue.png";
+import mobilelogo from "./mobilelogo.png";
 
 export {
   logo,
@@ -50,4 +51,5 @@ export {
   postgreSQL,
   node,
   vue,
+  mobilelogo,
 };
