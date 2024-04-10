@@ -5,8 +5,6 @@ import { logo } from "../../assets";
 
 export function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
-  // eslint-disable-next-line no-unused-vars
-  const [active, setActive] = useState("");
 
   function toggleMenu() {
     setOpenMenu(!openMenu);
@@ -20,7 +18,6 @@ export function Navbar() {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            setActive("");
             window.scrollTo(0, 0);
           }}
         >
@@ -34,35 +31,25 @@ export function Navbar() {
           <li
             className="mx-6"
             onClick={() => {
-              setActive("");
               window.scrollTo(0, 0);
             }}
           >
             <a className="navBar-a-styling">Home</a>
           </li>
-          <li
-            className="mx-6"
-            onClick={() => {
-              setActive("About");
-            }}
-          >
-            <a className="navBar-a-styling">About</a>
+          <li className="mx-6">
+            <a className="navBar-a-styling" href="#about">
+              About
+            </a>
           </li>
-          <li
-            className="mx-6"
-            onClick={() => {
-              setActive("Projects");
-            }}
-          >
-            <a className="navBar-a-styling">Projects</a>
+          <li className="mx-6">
+            <a className="navBar-a-styling" href="#projects">
+              Projects
+            </a>
           </li>
-          <li
-            className="mx-6"
-            onClick={() => {
-              setActive("Contact Me");
-            }}
-          >
-            <a className="navBar-a-styling">Contact Me</a>
+          <li className="mx-6">
+            <a className="navBar-a-styling" href="#contact">
+              Contact Me
+            </a>
           </li>
         </ul>
         <button

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { mobilelogo } from "../../assets";
 
 export function MobileNavBar({ isOpen, toggleMenu }) {
   MobileNavBar.propTypes = {
@@ -14,7 +15,11 @@ export function MobileNavBar({ isOpen, toggleMenu }) {
       onClick={toggleMenu}
     >
       <div className="w-[45vw] h-screen bg-[#342864] p-8">
-        <h1 className="mb-12">Portfolio</h1>
+        <img
+          src={mobilelogo}
+          alt="logo"
+          className="w-9 h-9 object-contain mb-12"
+        />
         <ul className="flex flex-col gap-8 list-none ml-[-1.5rem]">
           <li className="mx-6">
             <a className="navBar-a-styling">Home</a>
