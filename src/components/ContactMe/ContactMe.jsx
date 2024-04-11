@@ -3,6 +3,7 @@ import { ContactInfoCard } from "./ContactInfoCard";
 import { SectionWrapper } from "../hoc/SectionWrapper";
 import { textVariant, fadeIn } from "../../utils/motion";
 import { motion } from "framer-motion";
+import { contacts } from "../../constants";
 
 function ContactMe() {
   return (
@@ -16,28 +17,23 @@ function ContactMe() {
         </h2>
       </motion.div>
 
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5, 0.75)}
-        className="md:flex md:gap-12 mt-12"
-      >
-        <div className="md:w-1/2 md:order-2 mb-12 md:mb-0">
+      <div className="md:flex md:gap-12 mt-12">
+        <motion.div
+          variants={fadeIn("right", "spring", 0.5, 0.75)}
+          className="md:w-1/2 md:order-2 mb-12 md:mb-0"
+        >
           <EmailForm />
-        </div>
+        </motion.div>
         <div className="md:w-1/2 md:order-1">
-          <ContactInfoCard
-            urlText="https://github.com/Sakhee89/"
-            iconText="https://github.com/Sakhee89/"
-          />
-          <ContactInfoCard
-            urlText="https://www.linkedin.com/in/kevin-chan-b7103b135/"
-            iconText="https://www.linkedin.com/in/kevin-chan-b7103b135/"
-          />
-          <ContactInfoCard
-            urlText="KevinChan01@outlook.com"
-            iconText="mailto:KevinChan01@outlook.com"
-          />
+          {contacts.map((contact, index) => (
+            <ContactInfoCard
+              key={`contact-${index}`}
+              index={index}
+              {...contact}
+            />
+          ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

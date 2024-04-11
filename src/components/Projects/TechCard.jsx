@@ -9,12 +9,12 @@ export function TechCard({ icon, index }) {
       options={{
         max: 45,
         scale: 1,
-        speed: 550,
+        speed: 600,
       }}
       className="rounded-[10px] py-1 px-1 flex justify-evenly items-center
         flex-col"
     >
-      <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+      <motion.div variants={fadeIn("right", "spring", index * 0.25, 0.75)}>
         <img src={icon} alt="tech icon" className="w-20 h-20 object-contain" />
       </motion.div>
     </Tilt>

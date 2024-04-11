@@ -165,4 +165,19 @@ const projects = [
   },
 ];
 
-export { services, technologies, projects };
+const contacts = [
+  {
+    text: "https://github.com/Sakhee89/",
+    url: "https://github.com/Sakhee89/",
+  },
+  {
+    text: "https://www.linkedin.com/in/kevin-chan-b7103b135/",
+    url: "https://www.linkedin.com/in/kevin-chan-b7103b135/",
+  },
+  {
+    text: "kevinchan01@outlook.com",
+    url: "mailto:kevinchan01@outlook.com",
+  },
+];
+
+export { services, technologies, projects, contacts };

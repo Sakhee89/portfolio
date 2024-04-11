@@ -22,8 +22,8 @@
     @apply text-[1.1rem] font-medium relative cursor-pointer before:w-8 before:h-[0.2rem] before:bg-gradient-to-r before:from-[#a993f3] before:to-[#7e61e7] before:rounded-lg before:absolute before:bottom-[-0.6rem] before:opacity-0 before:translate-x-[-1.5rem] before:transition-all before:ease-linear before:duration-300 before:hover:w-full before:hover:translate-x-0 before:hover:opacity-100;
   }
 
-  .form-styling {
-    @apply p-[0.7rem] rounded-[0.3rem] flex-[1] w-full text-[0.9rem] text-white bg-[#130f2a] sm:rounded-[0.6rem] border-[1.5px] border-solid border-[#6751b9] sm:p-4;
+  .form-input-styling {
+    @apply p-[0.7rem] rounded-[0.3rem] flex-[1] w-full xs:text-[0.8rem] text-[0.6rem] text-white bg-[#130f2a] sm:rounded-[0.6rem] border-[1.5px] border-solid border-[#6751b9] mt-[0.6rem] sm:p-4;
   }
 }
 
