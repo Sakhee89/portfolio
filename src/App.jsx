@@ -5,6 +5,7 @@ import { Navbar } from "./components/NavBar/NavBar";
 import { Hero } from "./components/Hero";
 import Projects from "./components/Projects/Projects";
 import Tech from "./components/Projects/Tech";
+import { StarsCanvas } from "./components/canvas/StarsCanvas";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <AboutMe />
           <Projects />
           <Tech />
+          <StarsCanvas />
           <ContactMe />
         </div>
       </div>
