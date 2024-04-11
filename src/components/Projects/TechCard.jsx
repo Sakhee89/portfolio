@@ -9,7 +9,7 @@ export function TechCard({ icon, index }) {
       options={{
         max: 45,
         scale: 1,
-        speed: 600,
+        speed: 450,
       }}
       className="rounded-[10px] py-1 px-1 flex justify-evenly items-center
         flex-col"

@@ -25,7 +25,7 @@ export function ContactInfoCard({ text, url, index }) {
         <div className="w-16 h-16 flex flex-col items-center justify-center rounded-lg bg-[#130f2a] mb-[0.8rem]">
           <SocialIcon url={url} />
         </div>
-        <a href={text} className="font-[400] text-[0.9rem]">
+        <a href={text} className="font-[400] text-[0.9rem] text-[#d1c2c2]">
           {text}
         </a>
       </motion.div>
