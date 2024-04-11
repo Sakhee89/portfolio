@@ -49,7 +49,7 @@ export function EmailForm() {
   };
 
   return (
-    <div className="w-full border rounded-[0.3rem] p-9 bg-[#1a103d] border-[#a892fe] sm:rounded-[0.6rem] overflow-hidden">
+    <div className="w-full border rounded-[0.5rem] p-9 bg-[#1a103d] border-[#6751b9] sm:rounded-[0.6rem] overflow-hidden">
       <h2 className="flex justify-center pb-[2rem] text-[20px] text-[#e4dbdb] font-bold">
         Contact Me
       </h2>
