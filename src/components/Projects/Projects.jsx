@@ -26,6 +26,9 @@ function Projects() {
           links to code repositories and hosted sites. It reflects my ability to
           solve complex problems, work with different technologies, and manage
           projects effectively.
+          <br />
+          <br />
+          Please click on the github and web icons to be redirected to the sites
         </motion.p>
       </div>
 

@@ -24,6 +24,7 @@ import postgreSQL from "./postgreSQL.png";
 import node from "./node.png";
 import vue from "./vue.png";
 import mobilelogo from "./mobilelogo.png";
+import link from "./link.png";
 
 export {
   logo,
@@ -52,4 +53,5 @@ export {
   node,
   vue,
   mobilelogo,
+  link,
 };

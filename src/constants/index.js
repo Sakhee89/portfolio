@@ -95,7 +95,8 @@ const projects = [
       },
     ],
     image: newsfe,
-    source_code_link: "https://sakhee-news.netlify.app/",
+    githubLink: "https://github.com/Sakhee89/fe-sakhee-news",
+    websiteLink: "https://sakhee-news.netlify.app/",
   },
   {
     name: "News Server (BackEnd)",
@@ -128,7 +129,8 @@ const projects = [
       },
     ],
     image: newsbe,
-    source_code_link: "https://sakhee-news.onrender.com/api",
+    githubLink: "https://github.com/Sakhee89/sakhee-server",
+    websiteLink: "https://sakhee-news.onrender.com/api",
   },
   {
     name: "Knowledge Nest",
@@ -161,7 +163,8 @@ const projects = [
       },
     ],
     image: knowledgenest,
-    source_code_link: "https://knowledge-nest-fe.vercel.app/",
+    websiteLink: "https://knowledge-nest-fe.vercel.app/",
+    githubLink: "https://github.com/TomMirfin/knowledge-nest-FE",
   },
 ];
 
