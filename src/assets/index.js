@@ -25,7 +25,8 @@ import node from "./node.png";
 import vue from "./vue.png";
 import mobilelogo from "./mobilelogo.png";
 import link from "./link.png";
-
+import hotelBooking from "./hotelBooking.png";
+import eventsPlatform from "./eventsPlatform.png";
 export {
   logo,
   backend,
@@ -54,4 +55,6 @@ export {
   vue,
   mobilelogo,
   link,
+  hotelBooking,
+  eventsPlatform,
 };

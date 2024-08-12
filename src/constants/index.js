@@ -15,6 +15,8 @@ import {
   newsbe,
   postgreSQL,
   vue,
+  hotelBooking,
+  eventsPlatform,
 } from "../assets";
 
 const services = [
@@ -165,6 +167,78 @@ const projects = [
     image: knowledgenest,
     websiteLink: "https://knowledge-nest-fe.vercel.app/",
     githubLink: "https://github.com/TomMirfin/knowledge-nest-FE",
+  },
+  {
+    name: "Hotel Booking",
+    description:
+      "A dynamic hotel booking platform using TypeScript, Next.js, and React. Integrated Sanity CMS for content management and Stripe for secure payments. Enabled user authentication with NextAuth.js and enhanced the UI with Tailwind CSS and real-time notifications via react-hot-toast. Implemented efficient data fetching with SWR and intuitive date selection using react-datepicker.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "Sanity CMS",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "axios",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "TypeScript",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "Stripe",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "tailwind",
+        color: "text-[#2f80ed]",
+      },
+    ],
+    image: hotelBooking,
+    websiteLink: "https://hotel-booking-xi-five.vercel.app/",
+    githubLink: "https://github.com/Sakhee89/hotel-booking-site",
+  },
+  {
+    name: "Events Platform",
+    description:
+      "A community events platform enabling businesses to create, share, and manage events with local members. Built using TypeScript, React.js, and Node.js, with MongoDB and Stripe integration. Implemented Google Calendar API for event syncing and ensured secure user authentication and payment processing. Designed a responsive, user-friendly interface and provided detailed documentation for hosting and local setup.",
+    tags: [
+      {
+        name: "React.js",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "MongoDB",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "Express",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "TypeScript",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "Stripe",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "Google Calendar",
+        color: "text-[#2f80ed]",
+      },
+      {
+        name: "tailwind",
+        color: "text-[#2f80ed]",
+      },
+    ],
+    image: eventsPlatform,
+    websiteLink: "https://fe-events-platform.vercel.app/",
+    githubLink: "https://github.com/Sakhee89/fe-events-platform",
   },
 ];
 
